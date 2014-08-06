@@ -6,7 +6,7 @@ General CSS utilities and SASS mixins
 ///////////////////////////////////////////////////// */
 
 
-.no-flicker
+.gpu
   -webkit-transform translate3d(0, 0, 0)
 
 .hide-text
@@ -15,6 +15,11 @@ General CSS utilities and SASS mixins
   text-shadow none
   color transparent
   background-color transparent
+
+.vertical-align
+  position relative
+  top 50%
+  transform translateY(-50%)
 
 
 /* Responsive Mixins
