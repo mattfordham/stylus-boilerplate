@@ -16,13 +16,13 @@ html
   -webkit-font-smoothing antialiased
 
 body 
-  font-family body-font
-  font-size body-font-size
-  line-height base-line-height
-  color base-color
+  font-family $body-font
+  font-size $body-font-size
+  line-height $base-line-height
+  color $base-color
   
 h1, h2, h3, h4, h5 
-  margin global-margin 0
+  margin $global-margin 0
   font-weight bold
 
 h1
@@ -42,7 +42,7 @@ h5
   
  
 p, ol, ul
-  margin global-margin 0
+  margin $global-margin 0
 
 // p 
 
@@ -50,7 +50,7 @@ p, ol, ul
 
 ul 
   list-style disc
-  margin-left global-margin
+  margin-left $global-margin
 
 a 
   &:hover 

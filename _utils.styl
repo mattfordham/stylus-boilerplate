@@ -23,42 +23,24 @@ vertical-align()
 
 
 /* Responsive Mixins
-   see: http://jakearchibald.github.com/sass-ie
 ------------------------------------------------ */
 
 // To create min-width media queries
 above(width)
-  if fix-mqs
-    if fix-mqs >= width
-      {block}
-  else
-    @media screen and (min-width: width)
-      {block}
-
+  @media screen and (min-width: width)
+    {block}
 
 // To create max-width media queries
 below(width)
-  if fix-mqs
-    if fix-mqs <= width
-      {block}
-  else
-    @media screen and (max-width: width)
-      {block}
-
-
-// For only old IE
-old-ie()
-  if $old-ie
+  @media screen and (max-width: width)
     {block}
-
-
+      
 // Hide on mobile
 .no-mobile
   display: none
   
   +above(tablet)
     display block
-
 
 // Only on mobile
 .mobile-only
