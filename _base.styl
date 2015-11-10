@@ -6,15 +6,16 @@ Only single elements. No classes or ids.
 ///////////////////////////////////////////////////// */
 
 * 
-  -moz-box-sizing border-box
-  -webkit-box-sizing border-box
-  box-sizing border-box
-
+  box-sizing inherit
+  -moz-box-sizing inherit
+  -webkit-box-sizing inherit
 
 html 
+  box-sizing border-box
   -webkit-text-size-adjust 100%
-  -webkit-font-smoothing antialiased
-
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  
 body 
   font-family $body-font
   font-size $body-font-size
@@ -22,7 +23,7 @@ body
   color $base-color
   
 h1, h2, h3, h4, h5 
-  margin $global-margin 0
+  margin-bottom $spacer
   font-weight bold
 
 h1
@@ -42,7 +43,7 @@ h5
   
  
 p, ol, ul
-  margin $global-margin 0
+  margin-bottom $spacer
 
 // p 
 
@@ -50,7 +51,7 @@ p, ol, ul
 
 ul 
   list-style disc
-  margin-left $global-margin
+  margin-left $spacer
 
 a 
   &:hover 
